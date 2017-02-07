@@ -1,0 +1,24 @@
+package com.calcus.scheduler.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Component
+@Table(name = "User_Account")
+public class User { 
+	
+	@javax.persistence.Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int Id;
+	private String Name;
+	private String Email;
+	private String Password;
+	private String Mobile; 
+	
+	
+
+}

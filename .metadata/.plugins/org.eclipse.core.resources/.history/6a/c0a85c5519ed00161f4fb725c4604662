@@ -1,0 +1,15 @@
+package com.calcus.scheduler.dao;
+
+import java.util.List;
+
+import com.calcus.scheduler.model.User;
+
+public interface UserDAO { 
+	
+	void saveOrUpdate(User users);
+	void delete(int Id);
+	public User getUsers(int Id);
+	List<User> listUsers();
+
+
+}
