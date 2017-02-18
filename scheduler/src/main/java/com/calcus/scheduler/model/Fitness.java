@@ -3,6 +3,8 @@ package com.calcus.scheduler.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -16,6 +18,9 @@ public class Fitness {
 	private int Id;
 	private String To_Date;
 	private String Expiry_Date;
+//	@ManyToOne
+//	@JoinColumn(name="Vehicle_id")
+//	private Vehicle vehicle;
 	
 	public int getId() {
 		return Id;
@@ -35,6 +40,12 @@ public class Fitness {
 	public void setExpiry_Date(String expiry_Date) {
 		Expiry_Date = expiry_Date;
 	}
+//	public Vehicle getVehicle() {
+//		return vehicle;
+//	}
+//	public void setVehicle(Vehicle vehicle) {
+//		this.vehicle = vehicle;
+//	}
 
 	
 }

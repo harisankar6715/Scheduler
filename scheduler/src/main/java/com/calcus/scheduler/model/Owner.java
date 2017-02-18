@@ -21,7 +21,9 @@ public class Owner {
 	private String Name;
 	private String Email;
 	private String Mobile;
-	
+//	@OneToMany(mappedBy="owner")
+//	private Set<Vehicle> vehicle;
+
 	
 	
 	public int getId() {
@@ -50,6 +52,12 @@ public class Owner {
 	public void setMobile(String mobile) {
 		Mobile = mobile;
 	}
+//	public Set<Vehicle> getVehicle() {
+//		return vehicle;
+//	}
+//	public void setVehicle(Set<Vehicle> vehicle) {
+//		this.vehicle = vehicle;
+//	}
 	
 
 	

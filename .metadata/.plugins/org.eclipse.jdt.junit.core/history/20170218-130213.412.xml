@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCaseVehicle" project="scheduler" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.calcus.scheduler.junitTest.TestCaseVehicle" time="0.643">
-    <testcase name="vehicleNameTest" classname="com.calcus.scheduler.junitTest.TestCaseVehicle" time="0.644"/>
-  </testsuite>
-</testrun>

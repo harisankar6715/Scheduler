@@ -44,6 +44,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Hari\Desktop\Calcus\scheduler\src\main\java\com\calcus\scheduler\model\Fitness.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -56,12 +57,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.calcus.schedulerFrontEnd"/>
 			<item value="com.calcus.scheduler"/>
 		</list>
 		<list key="groupId">
 			<item value="com.calcus"/>
 		</list>
 		<list key="artifactId">
+			<item value="schedulerFrontEnd"/>
 			<item value="scheduler"/>
 		</list>
 		<list key="projectNameTemplate">
