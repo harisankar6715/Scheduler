@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.EnableTransactionManagement"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.datasource.DriverManagerDataSource"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate5.LocalSessionFactoryBuilder"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateTransactionManager"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.dao.UsersDAO"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.model.Users"/>
+<fullyQualifiedTypeName name="org.hibernate.Query"/>
+<fullyQualifiedTypeName name="org.hibernate.query.Query"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.dao.OwnerDAO"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.model.Owner"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.dao.VehicleDAO"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.model.Vehicle"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.model.Insurance"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.dao.InsuranceDAO"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.dao.RoadTaxDAO"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.model.RoadTax"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.dao.PollutionDAO"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.model.Pollution"/>
+</qualifiedTypeNameHistroy>

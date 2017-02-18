@@ -1,0 +1,26 @@
+package com.calcus.scheduler;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.calcus.scheduler.dao.PollutionDAO;
+import com.calcus.scheduler.model.Pollution;
+
+
+
+public class PollutionTest { 
+	public static void main(String[] args) {
+	
+	@SuppressWarnings("resource")
+	AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+	context.scan("com.calcus");
+	context.refresh();
+	PollutionDAO pollutionDAO = (PollutionDAO) context.getBean("pollutionDAO");
+	Pollution pollution = (Pollution) context.getBean("pollution");
+	// Create Operation
+	pollution.setTo_Date("02012017");
+	pollution.setExpiry_Date("01072017");
+	pollutionDAO.saveOrUpdate(pollution);
+    
+    System.out.println("Pollution Updated");
+	}
+}

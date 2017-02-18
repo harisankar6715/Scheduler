@@ -1,0 +1,5 @@
+package com.calcus.scheduler.dao;
+
+public interface RoadTaxDAO {
+
+}

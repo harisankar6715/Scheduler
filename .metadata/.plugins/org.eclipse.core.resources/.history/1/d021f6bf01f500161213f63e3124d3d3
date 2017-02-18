@@ -1,0 +1,20 @@
+package com.calcus.scheduler.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Component
+@Table(name = "Pollution")
+public class Pollution {
+	
+	@javax.persistence.Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int PId;
+	private String To_Date;
+	private String Expiry_Date;
+
+}
