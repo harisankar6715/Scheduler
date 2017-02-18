@@ -13,14 +13,15 @@ import org.springframework.stereotype.Component;
 public class RoadTax {
 
 	@javax.persistence.Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int RId;
+	private int Id;
 	private String To_Date;
 	private String Expiry_Date;
-	public int getRId() {
-		return RId;
+	
+	public int getId() {
+		return Id;
 	}
-	public void setRId(int rId) {
-		RId = rId;
+	public void setId(int id) {
+		Id = id;
 	}
 	public String getTo_Date() {
 		return To_Date;

@@ -29,17 +29,17 @@ public class PermitDAOImpl implements PermitDAO{
 	}
 
 	@Transactional
-	public void delete(int TId) {
+	public void delete(int Id) {
 		Permit permitToDelete = new Permit();
-		permitToDelete.setTId(TId);
+		permitToDelete.setId(Id);
 		sessionFactory.getCurrentSession().delete(permitToDelete);
 
 	}
 
 	@Transactional
-	public Permit get(int TId) {
-		String hql = "from Permit where Id=:TId";
-		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("TId", TId);
+	public Permit get(int Id) {
+		String hql = "from Permit where Id=:Id";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("Id", Id);
 		List<Permit> gotPermit = (List<Permit>)query.list();
 		if (gotPermit != null && !gotPermit.isEmpty())
 			return gotPermit.get(0);

@@ -13,14 +13,15 @@ import org.springframework.stereotype.Component;
 public class Permit { 
 	
 	@javax.persistence.Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int TId;
+	private int Id;
 	private String To_Date;
 	private String Expiry_Date;
-	public int getTId() {
-		return TId;
+	
+	public int getId() {
+		return Id;
 	}
-	public void setTId(int tId) {
-		TId = tId;
+	public void setId(int id) {
+		Id = id;
 	}
 	public String getTo_Date() {
 		return To_Date;

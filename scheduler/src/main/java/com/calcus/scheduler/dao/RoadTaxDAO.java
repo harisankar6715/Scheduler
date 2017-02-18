@@ -8,8 +8,8 @@ import com.calcus.scheduler.model.RoadTax;
 public interface RoadTaxDAO {
 	
 	void saveOrUpdate(RoadTax roadTax);
-	void delete(int RId);
-	public RoadTax get(int RId);
+	void delete(int Id);
+	public RoadTax get(int Id);
 	List<RoadTax> listRoadTax();
 
 }

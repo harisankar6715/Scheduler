@@ -29,17 +29,17 @@ public class RoadTaxDAOImpl implements RoadTaxDAO{
 	}
 
 	@Transactional
-	public void delete(int RId) {
+	public void delete(int Id) {
 		RoadTax roadTaxToDelete = new RoadTax();
-		roadTaxToDelete.setRId(RId);
+		roadTaxToDelete.setId(Id);
 		sessionFactory.getCurrentSession().delete(roadTaxToDelete);
 
 	}
 
 	@Transactional
-	public RoadTax get(int RId) {
-		String hql = "from RoadTax where Id=:RId";
-		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("RId", RId);
+	public RoadTax get(int Id) {
+		String hql = "from RoadTax where Id=:Id";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("Id", Id);
 		List<RoadTax> gotRoadTax = (List<RoadTax>)query.list();
 		if (gotRoadTax != null && !gotRoadTax.isEmpty())
 			return gotRoadTax.get(0);

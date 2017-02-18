@@ -19,7 +19,7 @@ public class OwnerTest {
 		Owner owner = (Owner) context.getBean("owner");
 		// Create Operation
 		owner.setName("Owner");
-		owner.setEmail_Id("owner@gamil.com");
+		owner.setEmail("owner@gamil.com");
 		owner.setMobile("8593800002");
 		ownerDAO.saveOrUpdate(owner);
 	 

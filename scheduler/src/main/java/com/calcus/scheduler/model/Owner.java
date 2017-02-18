@@ -1,8 +1,12 @@
 package com.calcus.scheduler.model;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -13,16 +17,18 @@ import org.springframework.stereotype.Component;
 public class Owner { 
 	
 	@javax.persistence.Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int OId;
+	private int Id;
 	private String Name;
-	private String Email_Id;
+	private String Email;
 	private String Mobile;
 	
-	public int getOId() {
-		return OId;
+	
+	
+	public int getId() {
+		return Id;
 	}
-	public void setOId(int oId) {
-		OId = oId;
+	public void setId(int id) {
+		Id = id;
 	}
 	public String getName() {
 		return Name;
@@ -31,11 +37,12 @@ public class Owner {
 		Name = name;
 	}
 	
-	public String getEmail_Id() {
-		return Email_Id;
+	
+	public String getEmail() {
+		return Email;
 	}
-	public void setEmail_Id(String email_Id) {
-		Email_Id = email_Id;
+	public void setEmail(String email) {
+		Email = email;
 	}
 	public String getMobile() {
 		return Mobile;
@@ -43,6 +50,7 @@ public class Owner {
 	public void setMobile(String mobile) {
 		Mobile = mobile;
 	}
+	
 
 	
 }

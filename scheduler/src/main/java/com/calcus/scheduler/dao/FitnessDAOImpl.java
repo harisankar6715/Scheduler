@@ -30,17 +30,17 @@ public class FitnessDAOImpl implements FitnessDAO{
 	}
 
 	@Transactional
-	public void delete(int FId) {
+	public void delete(int Id) {
 		Fitness fitnessToDelete = new Fitness();
-		fitnessToDelete.setFId(FId);
+		fitnessToDelete.setId(Id);
 		sessionFactory.getCurrentSession().delete(fitnessToDelete);
 
 	}
 
 	@Transactional
-	public Fitness get(int FId) {
-		String hql = "from Fitness where Id=:FId";
-		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("FId", FId);
+	public Fitness get(int Id) {
+		String hql = "from Fitness where Id=:Id";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("Id", Id);
 		List<Fitness> gotFitness = (List<Fitness>)query.list();
 		if (gotFitness != null && !gotFitness.isEmpty())
 			return gotFitness.get(0);

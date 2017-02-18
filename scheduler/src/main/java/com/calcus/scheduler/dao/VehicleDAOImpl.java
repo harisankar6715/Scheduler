@@ -30,17 +30,17 @@ public class VehicleDAOImpl implements VehicleDAO {
 	}
 
 	@Transactional
-	public void delete(int VId) {
+	public void delete(int Id) {
 		Vehicle vehicleToDelete = new Vehicle();
-		vehicleToDelete.setVId(VId);
+		vehicleToDelete.setId(Id);
 		sessionFactory.getCurrentSession().delete(vehicleToDelete);
 
 	}
 
 	@Transactional
-	public Vehicle get(int VId) {
-		String hql = "from Vehicle where Id=:VId";
-		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("VId", VId);
+	public Vehicle get(int Id) {
+		String hql = "from Vehicle where Id=:Id";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("Id", Id);
 		List<Vehicle> gotVehicle = (List<Vehicle>)query.list();
 		if (gotVehicle != null && !gotVehicle.isEmpty())
 			return gotVehicle.get(0);

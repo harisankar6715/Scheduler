@@ -22,7 +22,7 @@ public class FitnessTest {
 		fitness.setExpiry_Date("01072032");
 		fitnessDAO.saveOrUpdate(fitness);
 	    
-	    System.out.println("Pollution Updated");
+	    System.out.println("Fitness Updated");
 		}
 
 }

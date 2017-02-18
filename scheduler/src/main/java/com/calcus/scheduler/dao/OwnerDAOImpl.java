@@ -30,17 +30,17 @@ public class OwnerDAOImpl implements OwnerDAO{
 	}
 
 	@Transactional
-	public void delete(int OId) {
+	public void delete(int Id) {
 		Owner ownerToDelete = new Owner();
-		ownerToDelete.setOId(OId);
+		ownerToDelete.setId(Id);
 		sessionFactory.getCurrentSession().delete(ownerToDelete);
 
 	}
 
 	@Transactional
-	public Owner get(int OId) {
-		String hql = "from Owner where Id=:OId";
-		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("Id", OId);
+	public Owner get(int Id) {
+		String hql = "from Owner where Id=:Id";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("Id", Id);
 		List<Owner> gotOwner = (List<Owner>)query.list();
 		if (gotOwner != null && !gotOwner.isEmpty())
 			return gotOwner.get(0);

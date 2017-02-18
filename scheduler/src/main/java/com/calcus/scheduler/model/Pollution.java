@@ -13,14 +13,15 @@ import org.springframework.stereotype.Component;
 public class Pollution {
 	
 	@javax.persistence.Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int PId;
+	private int Id;
 	private String To_Date;
 	private String Expiry_Date;
-	public int getPId() {
-		return PId;
+	
+	public int getId() {
+		return Id;
 	}
-	public void setPId(int pId) {
-		PId = pId;
+	public void setId(int id) {
+		Id = id;
 	}
 	public String getTo_Date() {
 		return To_Date;

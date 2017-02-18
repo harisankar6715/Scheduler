@@ -1,0 +1,32 @@
+package com.calcus.scheduler;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.calcus.scheduler.dao.VehicleDAO;
+import com.calcus.scheduler.model.Vehicle;
+
+
+
+public class VehicleTest { 
+	
+	public static void main(String[] args) {
+
+	
+	@SuppressWarnings("resource")
+	AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+	context.scan("com.calcus");
+	context.refresh();
+	VehicleDAO vehicleDAO = (VehicleDAO) context.getBean("vehicleDAO");
+	Vehicle vehicle = (Vehicle) context.getBean("vehicle");
+	// Create Operation
+	vehicle.setReg_No("KL08BG1234");
+	vehicle.setManufacture("Mahindra"); 
+	vehicle.setModel("Scorpio");
+	vehicle.setYear("2010");
+	vehicle.setOId(2);
+	vehicleDAO.saveOrUpdate(vehicle);
+    
+    System.out.println("Vehicle Updated");
+
+}
+}

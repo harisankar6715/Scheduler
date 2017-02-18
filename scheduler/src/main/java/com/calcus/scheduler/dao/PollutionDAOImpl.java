@@ -29,17 +29,17 @@ public class PollutionDAOImpl implements PollutionDAO{
 	}
 
 	@Transactional
-	public void delete(int PId) {
+	public void delete(int Id) {
 		Pollution pollutionToDelete = new Pollution();
-		pollutionToDelete.setPId(PId);
+		pollutionToDelete.setId(Id);
 		sessionFactory.getCurrentSession().delete(pollutionToDelete);
 
 	}
 
 	@Transactional
-	public Pollution get(int PId) {
-		String hql = "from Pollution where Id=:PId";
-		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("PId", PId);
+	public Pollution get(int Id) {
+		String hql = "from Pollution where Id=:Id";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("Id", Id);
 		List<Pollution> gotPollution = (List<Pollution>)query.list();
 		if (gotPollution != null && !gotPollution.isEmpty())
 			return gotPollution.get(0);

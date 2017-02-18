@@ -9,8 +9,8 @@ import com.calcus.scheduler.model.Fitness;
 public interface FitnessDAO { 
 	
 	void saveOrUpdate(Fitness fitness);
-	void delete(int FId);
-	public Fitness get(int FId);
+	void delete(int Id);
+	public Fitness get(int Id);
 	List<Fitness> listFitness();
 
 }

@@ -1,0 +1,14 @@
+package com.calcus.scheduler.junitTest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestUsersTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

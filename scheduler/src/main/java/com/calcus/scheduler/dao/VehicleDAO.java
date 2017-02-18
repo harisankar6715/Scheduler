@@ -9,8 +9,8 @@ import com.calcus.scheduler.model.Vehicle;
 public interface VehicleDAO {
 	
 	void saveOrUpdate(Vehicle vehicle);
-	void delete(int VId);
-	public Vehicle get(int VId);
+	void delete(int Id);
+	public Vehicle get(int Id);
 	List<Vehicle> listVehicle();
 
 }

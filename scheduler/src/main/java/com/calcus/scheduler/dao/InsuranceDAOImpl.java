@@ -30,17 +30,17 @@ public class InsuranceDAOImpl implements InsuranceDAO{
 	}
 
 	@Transactional
-	public void delete(int IId) {
+	public void delete(int Id) {
 		Insurance insuranceToDelete = new Insurance();
-		insuranceToDelete.setIId(IId);
+		insuranceToDelete.setId(Id);
 		sessionFactory.getCurrentSession().delete(insuranceToDelete);
 
 	}
 
 	@Transactional
-	public Insurance get(int IId) {
-		String hql = "from Insurance where Id=:IId";
-		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("IId", IId);
+	public Insurance get(int Id) {
+		String hql = "from Insurance where Id=:Id";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql).setParameter("Id", Id);
 		List<Insurance> gotInsurance = (List<Insurance>)query.list();
 		if (gotInsurance != null && !gotInsurance.isEmpty())
 			return gotInsurance.get(0);

@@ -1,0 +1,7 @@
+package com.calcus.scheduler.junitTest;
+
+import junit.framework.TestCase;
+
+public class TestUsers extends TestCase {
+
+}

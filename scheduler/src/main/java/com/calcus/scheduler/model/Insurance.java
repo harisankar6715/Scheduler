@@ -12,14 +12,15 @@ import org.springframework.stereotype.Component;
 @Table(name = "Insurance")
 public class Insurance { 
 	@javax.persistence.Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int IId;
+	private int Id;
 	private String To_Date;
 	private String Expiry_Date;
-	public int getIId() {
-		return IId;
+	
+	public int getId() {
+		return Id;
 	}
-	public void setIId(int iId) {
-		IId = iId;
+	public void setId(int id) {
+		Id = id;
 	}
 	public String getTo_Date() {
 		return To_Date;

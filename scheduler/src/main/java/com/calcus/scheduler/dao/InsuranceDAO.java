@@ -9,8 +9,8 @@ import com.calcus.scheduler.model.Insurance;
 public interface InsuranceDAO {
 
 	void saveOrUpdate(Insurance insurance);
-	void delete(int IId);
-	public Insurance get(int IId);
+	void delete(int Id);
+	public Insurance get(int Id);
 	List<Insurance> listInsurance();
 
 }

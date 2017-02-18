@@ -3,6 +3,7 @@ package com.calcus.scheduler.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -13,16 +14,19 @@ import org.springframework.stereotype.Component;
 public class Vehicle {
 	
 	@javax.persistence.Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int VId;
+	private int Id;
 	private String Reg_No;
 	private String Manufacture;
 	private String Model;
 	private String Year;
-	public int getVId() {
-		return VId;
+	
+	
+	
+	public int getId() {
+		return Id;
 	}
-	public void setVId(int vId) {
-		VId = vId;
+	public void setId(int id) {
+		Id = id;
 	}
 	public String getReg_No() {
 		return Reg_No;
@@ -48,6 +52,7 @@ public class Vehicle {
 	public void setYear(String year) {
 		Year = year;
 	}
+	
 	
 	
 

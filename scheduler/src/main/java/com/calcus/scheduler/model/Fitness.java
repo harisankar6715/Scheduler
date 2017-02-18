@@ -13,14 +13,15 @@ import org.springframework.stereotype.Component;
 public class Fitness { 
 	
 	@javax.persistence.Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int FId;
+	private int Id;
 	private String To_Date;
 	private String Expiry_Date;
-	public int getFId() {
-		return FId;
+	
+	public int getId() {
+		return Id;
 	}
-	public void setFId(int fId) {
-		FId = fId;
+	public void setId(int id) {
+		Id = id;
 	}
 	public String getTo_Date() {
 		return To_Date;
