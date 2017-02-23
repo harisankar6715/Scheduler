@@ -48,5 +48,4 @@ public class Users {
 	public void setMobile(String mobile) {
 		Mobile = mobile;
 	}
-	
 }

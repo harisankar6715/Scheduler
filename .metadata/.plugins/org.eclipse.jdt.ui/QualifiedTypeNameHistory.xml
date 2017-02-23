@@ -21,10 +21,7 @@
 <fullyQualifiedTypeName name="org.hibernate.Query"/>
 <fullyQualifiedTypeName name="org.hibernate.query.Query"/>
 <fullyQualifiedTypeName name="javax.persistence.FetchType"/>
-<fullyQualifiedTypeName name="com.calcus.scheduler.model.Users"/>
-<fullyQualifiedTypeName name="com.calcus.scheduler.dao.UsersDAO"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.calcus.scheduler.dao.OwnerDAO"/>
 <fullyQualifiedTypeName name="com.calcus.scheduler.model.Owner"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
@@ -48,4 +45,16 @@
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.model.Users"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.dao.UsersDAO"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.dao.ReminderDAO"/>
+<fullyQualifiedTypeName name="com.calcus.scheduler.model.Reminder"/>
+<fullyQualifiedTypeName name="org.apache.catalina.User"/>
 </qualifiedTypeNameHistroy>

@@ -47,10 +47,22 @@ public class UsersDAOImpl implements UsersDAO{
 
 	@Transactional
 	public List<Users> listUsers() {
-		String hql = "from User";
+		String hql = "from Users";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		List<Users> listOfUser = (List<Users>)query.list();
 		return listOfUser;
 	}
-
+	@Transactional
+	public boolean isValidUser(String Email, String password) {
+		String hql = "from Users where Email= '" + Email + "' and " + " password ='" + password+"'";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		
+		@SuppressWarnings("unchecked")
+		List<Users> list = (List<Users>) query.list();
+		
+		if (list != null && !list.isEmpty()) {
+			return true;
+		}
+		return false;
+	}
 }

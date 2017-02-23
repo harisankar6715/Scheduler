@@ -19,6 +19,7 @@ import com.calcus.scheduler.model.Insurance;
 import com.calcus.scheduler.model.Owner;
 import com.calcus.scheduler.model.Permit;
 import com.calcus.scheduler.model.Pollution;
+import com.calcus.scheduler.model.Reminder;
 import com.calcus.scheduler.model.RoadTax;
 import com.calcus.scheduler.model.Users;
 import com.calcus.scheduler.model.Vehicle;
@@ -59,6 +60,7 @@ public SessionFactory getSessionFactory(DataSource datasource) {
 	sessionBuilder.addAnnotatedClass(Pollution.class);
 	sessionBuilder.addAnnotatedClass(Fitness.class);
 	sessionBuilder.addAnnotatedClass(Permit.class);
+	sessionBuilder.addAnnotatedClass(Reminder.class);
 	return sessionBuilder.buildSessionFactory();
 	}
 @Autowired
