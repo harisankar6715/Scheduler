@@ -1,8 +1,12 @@
 package com.calcus.scheduler.model;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -18,6 +22,8 @@ public class Users {
 	private String Email;
 	private String Password;
 	private String Mobile;
+	@OneToMany(mappedBy="users",fetch = FetchType.EAGER)
+	private Set<Task> tasks;
 	public int getId() {
 		return Id;
 	}
@@ -48,4 +54,11 @@ public class Users {
 	public void setMobile(String mobile) {
 		Mobile = mobile;
 	}
+	public Set<Task> getTasks() {
+		return tasks;
+	}
+	public void setTasks(Set<Task> tasks) {
+		this.tasks = tasks;
+	}
+	
 }

@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Wed Feb 22 16:10:35 IST 2017
+#Wed Mar 01 14:15:17 IST 2017
 org.eclipse.jst.j2ee.server\:scheduler=WEB-INF/lib/scheduler-0.0.1-SNAPSHOT.jar
 org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Hari\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-websocket\\8.0.32\\tomcat-embed-websocket-8.0.32.jar=WEB-INF/lib/tomcat-embed-websocket-8.0.32.jar
 org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Hari\\.m2\\repository\\org\\springframework\\spring-web\\4.3.1.RELEASE\\spring-web-4.3.1.RELEASE.jar=WEB-INF/lib/spring-web-4.3.1.RELEASE.jar

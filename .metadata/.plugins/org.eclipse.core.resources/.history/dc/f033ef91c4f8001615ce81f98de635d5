@@ -1,5 +1,0 @@
-package com.calcus.scheduler.dao;
-
-public class ReminderDAOImpl {
-
-}

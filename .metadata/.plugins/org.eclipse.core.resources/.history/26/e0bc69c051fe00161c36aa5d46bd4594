@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<html>
+<head>
+<title>Scheduler | Delete Reminder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="application/x-javascript">
+	
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+
+</script>
+<!-- Bootstrap Core CSS -->
+<link href="resources/css/bootstrap.min.css" rel='stylesheet'
+	type='text/css' />
+<!-- Custom CSS -->
+<link href="resources/css/style.css" rel='stylesheet' type='text/css' />
+<!-- jQuery -->
+<link
+	href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400'
+	rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700'
+	rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="resources/css/icon-font.min.css"
+	type='text/css' />
+
+<!-- //lined-icons -->
+<script src="resources/js/jquery-1.10.2.min.js"></script> 
+
+<link rel="stylesheet" href="resources/css/footable.core.css">
+<link rel="stylesheet" href="resources/css/footable.metro.css">
+<script src="resources/js/footable.js"></script>
+<script src="resources/js/footable.paginate.js"></script>
+</head>
+<body>
+
+</body>
+</html>
